@@ -1,0 +1,161 @@
+/* Navigation.css */
+/* Thêm vào CSS */
+.selected1 {
+    color: #1890ff !important;
+    text-decoration: underline !important;
+}
+
+.ant-menu-item-selected {
+    color: #1890ff; /* Màu xanh cho chữ khi đang ở trang hiện tại */
+    text-decoration: underline; /* Thêm gạch chân */
+}
+
+/* Thêm hiệu ứng cho menu khi hover */
+.ant-menu-item:hover {
+    color: #1890ff; /* Màu xanh khi hover */
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 64px;
+    top: 0;
+    left: 0;
+}
+
+.logo-container {
+    float: left;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.desktop-menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.main-menu {
+    border-bottom: none;
+    flex: 1;
+}
+
+.auth-section {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.login-button {
+    border-radius: 4px;
+}
+
+.user-dropdown {
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.user-dropdown:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.welcome-text {
+    margin: 0 8px;
+    font-weight: 500;
+}
+
+.mobile-menu-button {
+    display: none;
+    border: none;
+    font-size: 18px;
+}
+
+.mobile-auth-section {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+}
+
+.mobile-user-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mobile-user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-admin-button {
+    margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-header {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-header {
+        padding: 0 15px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+}
+
+/* Fix Layout content padding for fixed header */
+.layout {
+    min-height: 100vh;
+}
+
+.layout .ant-layout-content {
+    padding-top: 64px;
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .nav-header {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: landscape) {
+    .nav-header {
+        margin-top: 100%;
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "Header": {
+        "title": "Công ty Cổ phần Công nghệ Tiện ích Thông minh",
+        "paragraph": "Chuyên R&D các giải pháp, sản phẩm điện tử công nghệ cao. Cung cấp dịch vụ sản xuất OEM."
+    },
+    "About": {
+        "paragraph": "Chúng tôi là một đội ngũ đam mê với sứ mệnh mang lại những giải pháp công nghệ và an ninh hiệu quả nhất cho khách hàng. Tại IKY, chúng tôi tập trung vào việc phát triển và sản xuất các thiết bị điện tử thông minh và thiết bị chống trộm xe máy với sự cam kết về chất lượng, tính tiện ích và sự đổi mới.",
+        "Why": [
+            "Chuyên Gia Trong Lĩnh Vực GPS & Thiết Bị Thông Minh",
+            " Công Nghệ Hiện Đại – Hiệu Quả Tối Ưu",
+            "Bảo Mật & An Toàn",
+            "Thiết Bị Điện Thông Minh – Linh Hoạt & Tiện Ích"
+        ],
+        "Why2": [
+            " Hỗ Trợ Kỹ Thuật Nhanh Chóng",
+            "Dịch Vụ Hậu Mãi Uy Tín",
+            "Tích Hợp Nhiều Nền Tảng – Dễ Dàng Quản Lý",
+            " Đối Tác Tin Cậy Của Hàng Nghìn Khách Hàng"
+        ]
+    },
+    "Gallery": [
+        {
+            "title": "Smartkey V3 - Thiết Bị Chống Cướp Xe Máy Tích Hợp Khóa Smartkey 0₫",
+            "largeImage": "img/product/product1.webp",
+            "smallImage": "img/product/product1.webp"
+        },
+        {
+            "title": "Iky Bike - Khóa Xe Điện Tử",
+            "largeImage": "img/product/product2.webp",
+            "smallImage": "img/product/product2.webp"
+        },
+        {
+            "title": "Iky Found - Thiết Bị Chống Trộm Và Tìm Xe",
+            "largeImage": "img/product/product3.webp",
+            "smallImage": "img/product/product3.webp"
+        },
+        {
+            "title": "Còi báo xi nhan xe máy",
+            "largeImage": "img/product/product4.webp",
+            "smallImage": "img/product/product4.webp"
+        },
+        {
+            "title": "IKY GPS - Thiết Bị Giám Sát Và Định Vị Xe Máy",
+            "largeImage": "img/product/product5.webp",
+            "smallImage": "img/product/product5.webp"
+        },
+        {
+            "title": "Thẻ từ",
+            "largeImage": "img/product/product6.webp",
+            "smallImage": "img/product/product6.webp"
+        },
+        {
+            "title": "Thẻ từ",
+            "largeImage": "img/product/product6.webp",
+            "smallImage": "img/product/product6.webp"
+        },
+        {
+            "title": "Iky lock - khóa cửa thông minh cao cấp",
+            "largeImage": "img/product/product7.webp",
+            "smallImage": "img/product/product7.webp"
+        },
+        {
+            "title": "Itot - Công Tắt Cảm Ứng Thông Minh",
+            "largeImage": "img/product/product8.webp",
+            "smallImage": "img/product/product8.webp"
+        }
+    ],
+    "Services": [
+        {
+            "icon": "fas fa-lightbulb",
+            "name": "Giải pháp điện thông minh",
+            "text": "Cung cấp các thiết bị điện thông minh như Iky Lock, Iky LED, Itot giúp nâng cao tiện nghi và an toàn cho ngôi nhà của bạn."
+        },
+        {
+            "icon": "fas fa-bicycle",
+            "name": "Thiết bị điện cho xe máy",
+            "text": "Hệ thống điện xe máy hiện đại như SmartKey, Iky Found, Iky Bike – nâng cấp trải nghiệm và đảm bảo an toàn cho người dùng."
+        },
+        {
+            "icon": "fas fa-cogs",
+            "name": "Ứng dụng quản lý hệ thống HEAD",
+            "text": "Phát triển phần mềm chuyên dụng giúp các HEAD dễ dàng kiểm soát và tối ưu quy trình dịch vụ, vận hành hiệu quả hơn."
+        }
+    ],
+
+    "Testimonials": [
+        {
+            "img": "img/testimonials/01.jpg",
+            "text": "\"Sản phẩm GPS của công ty đã giúp chúng tôi quản lý đội xe hiệu quả hơn. Độ chính xác và tính năng thông minh rất đáng tin cậy, giúp tiết kiệm chi phí và nâng cao hiệu suất công việc.\"",
+            "name": "Nguyễn Văn A"
+        },
+        {
+            "img": "img/testimonials/02.jpg",
+            "text": "\"Đèn thông minh của công ty mang lại trải nghiệm tuyệt vời. Chúng tôi có thể điều khiển ánh sáng dễ dàng qua app, tạo không gian sống hiện đại và tiết kiệm điện năng.\"",
+            "name": "Trần Thị B"
+        },
+        {
+            "img": "img/testimonials/03.jpg",
+            "text": "\"Cửa tự động được lắp đặt trong tòa nhà của chúng tôi không chỉ tăng tính an toàn mà còn mang lại sự tiện lợi cho mọi người. Dịch vụ lắp đặt rất chuyên nghiệp.\"",
+            "name": "Lê Minh C"
+        },
+        {
+            "img": "img/testimonials/04.jpg",
+            "text": "\"Sản phẩm của công ty giúp chúng tôi tối ưu hóa quy trình làm việc và giảm thiểu rủi ro. Đặc biệt, tính năng GPS rất chính xác, hỗ trợ chúng tôi trong việc quản lý tài sản tốt hơn.\"",
+            "name": "Phan Thanh D"
+        },
+        {
+            "img": "img/testimonials/05.jpg",
+            "text": "\"Công ty cung cấp các thiết bị thông minh với chất lượng vượt trội. Đèn thông minh và cửa tự động đã thay đổi cách chúng tôi sinh hoạt và làm việc một cách tích cực.\"",
+            "name": "Nguyễn Thị E"
+        },
+        {
+            "img": "img/testimonials/06.jpg",
+            "text": "\"Tôi rất hài lòng với dịch vụ của công ty. Các thiết bị thông minh không chỉ cải thiện tiện ích mà còn tiết kiệm được rất nhiều chi phí trong dài hạn.\"",
+            "name": "Vũ Minh F"
+        }
+    ],
+
+    "Team": [
+        {
+            "img": "img/team/01.jpg",
+            "name": "John Doe",
+            "job": "Director"
+        },
+        {
+            "img": "img/team/02.jpg",
+            "name": "Mike Doe",
+            "job": "Senior Designer"
+        },
+        {
+            "img": "img/team/03.jpg",
+            "name": "Jane Doe",
+            "job": "Senior Designer"
+        },
+        {
+            "img": "img/team/04.jpg",
+            "name": "Karen Doe",
+            "job": "Project Manager"
+        }
+    ],
+    "Contact": {
+        "address": "38-40 Đường 21A, P. Bình Trị Đông B, Q. Bình Tân, TP. Hồ Chí Minh ",
+        "phone": "0902 806 999",
+        "email": "iky.cskh@gmail.com",
+        "facebook": "fb.com",
+        "twitter": "twitter.com",
+        "youtube": "youtube.com"
+    },
+    "Features": [
+        {
+            "icon": "fas fa-comment-dots",
+            "title": "Giao tiếp thông minh",
+            "text": "Tính năng giúp người dùng dễ dàng kiểm soát và điều chỉnh các thiết bị điện thông minh trong nhà chỉ với vài cú chạm qua ứng dụng di động của chúng tôi."
+        },
+        {
+            "icon": "fas fa-bullhorn",
+            "title": "Thông báo tức thì",
+            "text": "Hệ thống thông báo thông minh của chúng tôi cung cấp cập nhật chính xác về vị trí và trạng thái của xe máy, giúp người dùng luôn yên tâm về tình trạng xe mọi lúc, mọi nơi."
+        },
+
+        {
+            "icon": "fas fa-cogs",
+            "title": "Tự động hóa quy trình",
+            "text": "Giải pháp tự động hóa mạnh mẽ giúp tối ưu hóa quy trình quản lý hệ thống HEAD, tăng cường hiệu quả công việc và giảm thiểu sai sót trong việc vận hành thiết bị điện thông minh và xe máy."
+        },
+        {
+            "icon": "fas fa-shield-alt",
+            "title": "Bảo mật thông minh",
+            "text": "Chúng tôi cung cấp các giải pháp bảo mật tiên tiến cho thiết bị điện và xe máy, bảo vệ người dùng khỏi các mối đe dọa tiềm ẩn và đảm bảo sự an toàn tuyệt đối cho hệ thống."
+        }
+    ]
+}

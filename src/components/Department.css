@@ -1,0 +1,140 @@
+/* Department Layout và Content */
+.department-layout {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+}
+
+.department-content {
+    padding: 24px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.department-header {
+    margin-bottom: 24px;
+}
+
+.department-breadcrumb {
+    margin-bottom: 16px;
+}
+
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-title h2 {
+    color: #001529;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #1890ff;
+}
+
+.section-title .subtitle {
+    color: #8c8c8c;
+    font-size: 16px;
+}
+
+/* Department Card Styling */
+.department-row {
+    margin-top: 24px;
+}
+
+.department-link {
+    display: block;
+    text-decoration: none;
+}
+
+.department-card {
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #e8e8e8;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #1890ff;
+}
+
+.department-icon {
+    font-size: 36px;
+    color: #1890ff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.department-title {
+    color: #001529;
+    text-align: center;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.department-info {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.department-info p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.department-info p i {
+    margin-right: 8px;
+    color: #1890ff;
+}
+
+.department-info strong {
+    margin-right: 4px;
+}
+
+.department-ribbon {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Skeleton Loading */
+.skeleton-card {
+    min-height: 200px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .department-content {
+        padding: 16px;
+    }
+
+    .department-title {
+        font-size: 16px;
+    }
+
+    .department-info {
+        font-size: 13px;
+    }
+    .department-layout {
+        margin-top: 16%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+}

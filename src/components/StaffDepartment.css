@@ -1,0 +1,258 @@
+/* StaffDepartment.css */
+
+/* General Layout */
+.modern-layout {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.staff-department-content {
+    padding: 0 0 24px;
+}
+
+/* Header Styling */
+.modern-header {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.breadcrumb-container {
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.staff-department-header {
+    margin-bottom: 24px;
+    margin-left: 10px;
+}
+
+/* Breadcrumb and Back Button */
+.staff-breadcrumb {
+    margin-bottom: 12px;
+}
+
+.back-button {
+    color: #1890ff;
+    cursor: pointer;
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    color: #40a9ff;
+}
+
+.back-button .anticon {
+    margin-right: 6px;
+}
+
+.header-banner {
+    padding: 32px 24px;
+    background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.department-title {
+    color: white !important;
+    margin-bottom: 8px !important;
+}
+
+.section-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0;
+}
+
+/* Department Content Container */
+.department-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Tabs */
+.department-tabs .ant-tabs-nav {
+    margin-bottom: 24px;
+}
+
+/* Stats Cards */
+.department-stats {
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Controls */
+.controls-container {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.search-input {
+    border-radius: 4px;
+}
+
+.filter-select {
+    width: 100%;
+}
+
+.filter-alert {
+    margin-bottom: 16px;
+}
+
+/* Staff Content */
+.staff-content {
+    margin-top: 16px;
+}
+
+/* Card View */
+.staff-grid {
+    margin-bottom: 24px;
+}
+
+.modern-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.staff-card-cover {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    position: relative;
+}
+
+.staff-avatar-large {
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.position-tag {
+    margin-top: 8px;
+}
+
+.divider-sm {
+    margin: 12px 0;
+}
+
+.staff-info-container {
+    text-align: left;
+}
+
+/* List View */
+.modern-list {
+    background: transparent;
+}
+
+.staff-list-item {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.list-card {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.staff-card-content.horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.staff-details {
+    margin-left: 16px;
+    flex: 1;
+}
+
+.staff-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.staff-header .staff-name {
+    margin: 0 16px 0 0;
+}
+
+.staff-info-container.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.staff-info-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.staff-info-item {
+    margin-bottom: 8px;
+}
+
+/* Loading */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0;
+}
+
+/* Empty */
+.empty-container {
+    padding: 48px 0;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+/* Department Info Tab */
+.department-info-container {
+    padding: 16px 0;
+}
+
+.department-info-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-section {
+    margin-bottom: 24px;
+}

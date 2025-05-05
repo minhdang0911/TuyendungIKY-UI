@@ -1,0 +1,164 @@
+/* DetailUser.css */
+.detail-layout {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin-top: 3%;
+}
+
+.detail-content {
+    padding: 24px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.back-button {
+    margin-bottom: 20px;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.user-avatar {
+    border: 4px solid #1890ff;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-name {
+    margin-bottom: 8px !important;
+}
+
+.user-position {
+    font-size: 14px;
+}
+
+.info-divider {
+    margin: 16px 0;
+}
+
+.user-details {
+    text-align: left;
+}
+
+.awards-card,
+.achievements-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+.awards-list,
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.award-item {
+    border-left: 3px solid #1890ff !important;
+    transition: all 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-item {
+    border-left: 3px solid #fa8c16 !important;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.award-name,
+.achievement-name {
+    font-size: 16px;
+}
+
+.award-reason,
+.achievement-description {
+    margin-bottom: 8px;
+}
+
+.award-money {
+    color: #52c41a;
+    font-weight: 500;
+}
+
+.award-date {
+    font-size: 12px;
+}
+
+.image-gallery {
+    margin-top: 12px;
+}
+
+.achievement-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.achievement-image:hover {
+    opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .detail-content {
+        padding: 16px;
+    }
+
+    .awards-list,
+    .achievements-list {
+        max-height: 300px;
+    }
+
+    .user-avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .detail-layout {
+        min-height: 100vh;
+        background-color: #f0f2f5;
+        margin-top: 10%;
+    }
+}

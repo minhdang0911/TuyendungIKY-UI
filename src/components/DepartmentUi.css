@@ -1,0 +1,106 @@
+.department-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    align-items: stretch;
+    margin-top: -3%;
+}
+.name-department {
+    margin-top: -3% !important;
+}
+.department-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-4px);
+}
+
+.department-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1d4ed8;
+}
+
+.department-card p {
+    margin: 4px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+@media (min-width: 640px) {
+    .department-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .name-department {
+        margin-top: -55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .department-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -20%;
+    }
+    .name-department {
+        margin-top: -13% !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .department-container {
+        margin-top: 5% !important;
+    }
+    .name-department {
+        margin-top: -5% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .department-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: portrait) {
+    .department-container {
+        margin-top: -5%;
+    }
+    .name-department {
+        margin-top: -160% !important;
+    }
+}
+
+/* iPad Air - Landscape */
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: landscape) {
+    /* styles for iPad Air in landscape */
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1194px) and (orientation: portrait) {
+    /* styles for iPad Pro 12.9" in landscape */
+    .department-container {
+        margin-top: -5%;
+    }
+    .name-department {
+        margin-top: -8% !important;
+    }
+}
+/* CSS cho iPhone 14 Pro Max khi dọc */
+@media only screen and (device-width: 430px) and (device-height: 932px) and (orientation: portrait) {
+    .department-container {
+        margin-top: -7% !important;
+    }
+}
