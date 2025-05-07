@@ -2006,15 +2006,15 @@ export default function ManageAchievements() {
                         </Select>
                     </Space>
                     <Space>
-                        <Tooltip title="Làm mới dữ liệu">
+                        {/* <Tooltip title="Làm mới dữ liệu">
                             <Button
                                 style={{ marginTop: '-77px' }}
                                 icon={<ReloadOutlined />}
                                 onClick={fetchAllAchievements}
                             />
-                        </Tooltip>
+                        </Tooltip> */}
                         <Segmented
-                            style={{ marginTop: '-56px' }}
+                            style={{ position: 'absolute', marginLeft: '10px' }}
                             options={[
                                 {
                                     value: 'table',
@@ -2035,6 +2035,7 @@ export default function ManageAchievements() {
 
                 {viewType === 'table' ? (
                     <Table
+                        style={{ marginTop: '10px' }}
                         columns={columns}
                         dataSource={filteredData}
                         rowKey="_id"

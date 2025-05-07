@@ -295,6 +295,7 @@ const RoleManage = () => {
                         </div>
 
                         <Table
+                            style={{ marginTop: '10px' }}
                             dataSource={filteredRoles}
                             columns={columns}
                             rowKey="_id"

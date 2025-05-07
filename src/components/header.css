@@ -51,12 +51,12 @@
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
     /* styles for iPad Pro 12.9" in landscape */
-    .intro {
+    /* .intro {
         display: none;
-    }
+    } */
 
     .main-homepage {
-        position: absolute;
+        /* position: absolute; */
         top: -57px;
     }
 }
