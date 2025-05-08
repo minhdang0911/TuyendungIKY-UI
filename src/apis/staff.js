@@ -119,3 +119,44 @@ export const apiChangePassword = async ({ oldPassword, newPassword, confirmPassw
         throw new Error(error.response?.data?.message || 'Failed to change password');
     }
 };
+
+export const apiForgotPassword = async (email) => {
+    try {
+        const response = await fetch('https://tuyendungiky-api.onrender.com/api/users/forgot-password', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email }),
+        });
+
+        // Kiểm tra nếu API trả về lỗi (status khác 2xx)
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Có lỗi xảy ra khi gửi yêu cầu.');
+        }
+
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        // Ném lỗi với thông tin chi tiết hơn
+        throw new Error(error.message || 'Lỗi không xác định.');
+    }
+};
+
+export const apiResetPassword = async (token, newPassword) => {
+    try {
+        const response = await fetch(`https://tuyendungiky-api.onrender.com/api/users/reset-password/${token}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ newPassword }),
+        });
+
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        throw error;
+    }
+};

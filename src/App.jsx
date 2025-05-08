@@ -42,6 +42,7 @@ import ChangePassword from './components/Profile/ChangePassword';
 import { Button } from 'antd';
 import { IoArrowUpOutline } from 'react-icons/io5';
 import { apiHello } from './apis/Applications';
+import ResetPasswordPage, { ResetPassword } from './components/ResetPassword';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -138,7 +139,7 @@ const App = () => {
                 <Route path="/About-us" element={<AboutUs />} />
                 <Route path="/co-hoi-nghe-nghiep" element={<ListJob />} />
                 <Route path="/chi-tiet-cong-viec/:name" element={<DetailJob />} />
-
+                <Route path="/reset-password/:token" element={<ResetPasswordPage />} />
                 <Route path="*" element={<NotFoundPage />} />
 
                 <Route path="/profile" element={<ProfileLayout />}>
