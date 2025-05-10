@@ -28,6 +28,7 @@ import {
 } from '@ant-design/icons';
 import moment from 'moment';
 import { apiLoginUser, apiRegister, apiForgotPassword, apiResetPassword } from '../../apis/staff';
+import Cookies from 'js-cookie';
 
 const { Title, Text, Link } = Typography;
 const { Content } = Layout;
@@ -74,6 +75,15 @@ const AuthForm = () => {
         try {
             const response = await apiLoginUser(email, password);
             if (response.code === 200) {
+                const token = response.token;
+
+                // 👇 Lưu token vào cookies
+                Cookies.set('accessToken', token, {
+                    expires: 1, // 1 ngày
+                    secure: true, // bắt buộc nếu HTTPS
+                    sameSite: 'Lax',
+                });
+
                 if (remember) localStorage.setItem('savedEmail', email);
                 else localStorage.removeItem('savedEmail');
 
@@ -86,7 +96,6 @@ const AuthForm = () => {
             setLoading(false);
         }
     };
-
     const handleRegister = async (values) => {
         const formData = new FormData();
 

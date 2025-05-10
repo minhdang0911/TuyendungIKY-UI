@@ -1,4 +1,5 @@
 import axiosInstance from '../utils/axiosConfig';
+import Cookies from 'js-cookie';
 
 // Lấy tất cả người dùng
 export const apiGetAllUser = async () => {
@@ -83,16 +84,21 @@ export const apiLoginUser = async (email, password) => {
 // Lấy thông tin người dùng
 export const apiInfoUser = async () => {
     try {
+        const token = Cookies.get('accessToken'); // Lấy token từ cookies
+
         const response = await axiosInstance.get('/api/users/me', {
-            withCredentials: true, // Quan trọng để gửi cookies kèm theo request
+            headers: {
+                Authorization: `Bearer ${token}`, // Gắn vào header
+            },
+            withCredentials: true,
         });
+
         return response.data;
     } catch (error) {
         console.error('Failed to fetch user by id:', error.message);
         throw new Error('Failed to fetch user by id');
     }
 };
-
 // Đăng ký người dùng
 export const apiRegister = (data) =>
     axiosInstance.post('/api/users/register', data, {
