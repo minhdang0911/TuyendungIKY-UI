@@ -2089,11 +2089,13 @@ export default function ManageAchievements() {
                                     (option?.children ?? '').toLowerCase().includes(input.toLowerCase())
                                 }
                             >
-                                {listStaff.map((nv) => (
-                                    <Option key={nv._id} value={nv._id}>
-                                        {nv.hoten}
-                                    </Option>
-                                ))}
+                                {listStaff
+                                    .filter((nv) => nv.phongban_id)
+                                    .map((nv) => (
+                                        <Option key={nv._id} value={nv._id}>
+                                            {nv.hoten}-{nv.phongban_id?.tenphong}
+                                        </Option>
+                                    ))}
                             </Select>
                         </Form.Item>
 

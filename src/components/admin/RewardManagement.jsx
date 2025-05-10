@@ -1709,7 +1709,7 @@ export default function RewardManagement() {
             baseColumns.splice(2, 0, {
                 title: 'Phòng ban',
                 dataIndex: ['phongban_id', 'tenphong'],
-                render: (_, record) => <Tag color="purple">{record.phongban_id?.tenphong}</Tag>,
+                render: (_, record) => <Tag color="purple">{record.tenphong}</Tag>,
             });
         }
 
@@ -1734,16 +1734,18 @@ export default function RewardManagement() {
                     placeholder="Chọn nhân viên"
                     filterOption={(input, option) => option.children.toLowerCase?.().indexOf(input.toLowerCase()) >= 0}
                 >
-                    {users.map((user) => (
-                        <Option key={user._id} value={user._id}>
-                            <Space>
-                                <Avatar src={user.avatar} size="small">
-                                    {user.hoten?.[0]}
-                                </Avatar>
-                                {user.hoten} - {user.chucvu}
-                            </Space>
-                        </Option>
-                    ))}
+                    {users
+                        .filter((user) => user.phongban_id) // chỉ lấy những user có phongban_id
+                        .map((user) => (
+                            <Option key={user._id} value={user._id}>
+                                <Space>
+                                    <Avatar src={user.avatar} size="small">
+                                        {user.hoten?.[0]}
+                                    </Avatar>
+                                    {user.hoten} - {user.chucvu}
+                                </Space>
+                            </Option>
+                        ))}
                 </Select>
             </Form.Item>
 
